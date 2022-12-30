@@ -10,11 +10,12 @@ font-family: 'Poppins', sans-serif; */
 
 :root {
   --black: #171718;
-  --black-border: #171718;
+  --black-border: #26292d;
   --white: #fff;
   --purple: #5c62ec;
   --orange: rgb(254, 191, 44);
 
+  --text-color: var(--black);
   --dark-bg: var(--black);
   --dark-border: var(--black-border);
   --header-text: var(--white);
@@ -24,6 +25,8 @@ font-family: 'Poppins', sans-serif; */
 html,
 body {
   font-family: 'DM Sans', sans-serif;
+  letter-spacing: -0.5px;
+  color: var(--text-color);
 }
 
 .container {
@@ -39,6 +42,7 @@ body {
   border-bottom: 1px solid var(--dark-border);
   background-color: var(--dark-bg);
   color: var(--header-text);
+  letter-spacing: normal;
 }
 
 .nav-row {
@@ -70,6 +74,11 @@ body {
 
 .nav-list__link {
   color: var(--header-text);
+  transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+  opacity: 0.8;
 }
 
 .nav-list__link--active {
@@ -87,4 +96,79 @@ body {
   height: 2px;
   width: 100%;
   background-color: var(--accent);
+}
+
+/* header */
+.header {
+  padding: 40px 0;
+  min-height: 695px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark-bg);
+  background-image: url('../img/header/header-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+
+  color: var(--header-text);
+  text-align: center;
+}
+
+.header__wrapper {
+  padding: 0 15px;
+  max-width: 660px;
+}
+
+.header__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.header__title strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.header__title em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.header__text {
+  font-size: 18px;
+  line-height: 1.333;
+  margin-bottom: 40px;
+}
+
+.header__text p + p {
+  margin-top: 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  height: 48px;
+  padding: 12px 48px;
+
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--white);
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
 }
