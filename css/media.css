@@ -1,0 +1,73 @@
+@media (max-width: 620px) {
+  /* header */
+
+  .header {
+    min-height: unset;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__title strong {
+    font-size: 30px;
+  }
+
+  /* General */
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .title-1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .title-2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  /* Projects */
+
+  .project__title {
+    font-size: 22px;
+  }
+
+  /* Projects page */
+
+  .project-details__desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Content list */
+
+  .content-list {
+    row-gap: 30px;
+  }
+
+  .content-list__item {
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .footer__wrapper {
+    row-gap: 20px;
+  }
+
+  /* Social */
+
+  .social {
+    gap: 20px;
+  }
+  .social__item {
+    width: 28px;
+  }
+}
