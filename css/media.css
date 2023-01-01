@@ -1,4 +1,10 @@
 @media (max-width: 620px) {
+  /* Nav */
+
+  .nav-row {
+    justify-content: space-between;
+  }
+
   /* header */
 
   .header {
@@ -69,5 +75,11 @@
   }
   .social__item {
     width: 28px;
+  }
+}
+
+@media (max-width: 542px) {
+  .dark-mode-btn {
+    order: 0;
   }
 }
